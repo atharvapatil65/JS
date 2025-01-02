@@ -12,10 +12,7 @@ for (i=0; i<n ; i++){
 console.log("atharva");
 }
 
-console.log(2 / 5);
-console.log(2 * 5);
-console.log(2 + 5);
-console.log(2 - 5);
+
 
 
 
