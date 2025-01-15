@@ -1,0 +1,132 @@
+html {
+  font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+}
+
+body {
+  width: 300px;
+  max-width: 750px;
+  min-width: 480px;
+  margin: 0 auto;
+  background-color: #1a1a2e;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 20px;
+}
+
+.lastResult {
+  color: white;
+  padding: 12px;
+  border-radius: 8px;
+  margin: 10px 0;
+  font-weight: 500;
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.guesses {
+  color: white;
+  padding: 12px;
+  border-radius: 8px;
+  background-color: rgba(255, 255, 255, 0.15);
+  margin: 15px 0;
+  font-weight: 500;
+}
+
+button {
+  background-color: #4a90e2;
+  color: #fff;
+  width: 250px;
+  height: 50px;
+  border-radius: 25px;
+  font-size: 24px;
+  border: none;
+  margin-top: 30px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+button:hover {
+  background-color: #357abd;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2);
+}
+
+#subt {
+  background-color: #2ecc71;
+  color: #ffffff;
+  width: 200px;
+  height: 50px;
+  border-radius: 10px;
+  font-size: 20px;
+  border: none;
+  margin-top: 40px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+#subt:hover {
+  background-color: #27ae60;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2);
+}
+
+#guessField {
+  color: #333;
+  width: 250px;
+  height: 50px;
+  font-size: 30px;
+  border: none;
+  margin-top: 25px;
+  border-radius: 8px;
+  text-align: center;
+  background-color: #f5f5f5;
+  transition: all 0.3s ease;
+  box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+#guessField:focus {
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(74, 144, 226, 0.3);
+  background-color: #ffffff;
+}
+
+#guess {
+  font-size: 48px;
+  margin-top: 80px;
+  color: #fff;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+#wrapper {
+  box-sizing: border-box;
+  text-align: center;
+  width: 450px;
+  height: 550px;
+  background: linear-gradient(145deg, #2d2d3a, #1f1f2e);
+  color: #fff;
+  font-size: 25px;
+  border-radius: 20px;
+  padding: 30px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+h1 {
+  background-color: rgba(0, 0, 0, 0.2);
+  color: #fff;
+  text-align: center;
+  padding: 15px;
+  border-radius: 10px;
+  margin-bottom: 30px;
+  font-weight: 600;
+}
+
+p {
+  font-size: 16px;
+  text-align: center;
+  line-height: 1.6;
+  color: rgba(255, 255, 255, 0.9);
+  margin: 15px 0;
+}
