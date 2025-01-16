@@ -3,16 +3,15 @@ html {
 }
 
 body {
-  width: 300px;
-  max-width: 750px;
-  min-width: 480px;
+  width: 100%;
   margin: 0 auto;
   background-color: #1a1a2e;
   display: flex;
   justify-content: center;
   align-items: center;
   min-height: 100vh;
-  padding: 20px;
+  padding: 10px;
+  box-sizing: border-box;
 }
 
 .lastResult {
@@ -36,10 +35,11 @@ body {
 button {
   background-color: #4a90e2;
   color: #fff;
-  width: 250px;
+  width: 100%;
+  max-width: 250px;
   height: 50px;
   border-radius: 25px;
-  font-size: 24px;
+  font-size: clamp(18px, 4vw, 24px);
   border: none;
   margin-top: 30px;
   cursor: pointer;
@@ -56,10 +56,11 @@ button:hover {
 #subt {
   background-color: #2ecc71;
   color: #ffffff;
-  width: 200px;
+  width: 100%;
+  max-width: 200px;
   height: 50px;
   border-radius: 10px;
-  font-size: 20px;
+  font-size: clamp(16px, 3vw, 20px);
   border: none;
   margin-top: 40px;
   cursor: pointer;
@@ -75,9 +76,10 @@ button:hover {
 
 #guessField {
   color: #333;
-  width: 250px;
+  width: 100%;
+  max-width: 250px;
   height: 50px;
-  font-size: 30px;
+  font-size: clamp(20px, 4vw, 30px);
   border: none;
   margin-top: 25px;
   border-radius: 8px;
@@ -94,8 +96,8 @@ button:hover {
 }
 
 #guess {
-  font-size: 48px;
-  margin-top: 80px;
+  font-size: clamp(32px, 6vw, 48px);
+  margin-top: clamp(40px, 8vh, 80px);
   color: #fff;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
 }
@@ -103,13 +105,14 @@ button:hover {
 #wrapper {
   box-sizing: border-box;
   text-align: center;
-  width: 450px;
-  height: 550px;
+  width: 90%;
+  max-width: 450px;
+  min-height: 550px;
   background: linear-gradient(145deg, #2d2d3a, #1f1f2e);
   color: #fff;
-  font-size: 25px;
+  font-size: clamp(18px, 3vw, 25px);
   border-radius: 20px;
-  padding: 30px;
+  padding: clamp(15px, 4vw, 30px);
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
 }
 
@@ -121,12 +124,49 @@ h1 {
   border-radius: 10px;
   margin-bottom: 30px;
   font-weight: 600;
+  font-size: clamp(24px, 5vw, 32px);
 }
 
 p {
-  font-size: 16px;
+  font-size: clamp(14px, 2.5vw, 16px);
   text-align: center;
   line-height: 1.6;
   color: rgba(255, 255, 255, 0.9);
   margin: 15px 0;
+}
+
+/* Media Queries */
+@media screen and (max-width: 480px) {
+  #wrapper {
+    padding: 15px;
+    min-height: auto;
+    width: 95%;
+  }
+
+  button, #subt {
+    height: 45px;
+  }
+
+  #guessField {
+    height: 45px;
+  }
+
+  #guess {
+    margin-top: 40px;
+  }
+
+  h1 {
+    padding: 10px;
+    margin-bottom: 20px;
+  }
+}
+
+@media screen and (max-height: 600px) {
+  #wrapper {
+    margin: 20px 0;
+  }
+
+  #guess {
+    margin-top: 30px;
+  }
 }
